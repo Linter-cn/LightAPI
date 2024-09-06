@@ -11,5 +11,5 @@ import java.util.HashMap;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class ParamMap extends HashMap<String, Object> {
-    private String sqlStatement;
+    private String statement;
 }

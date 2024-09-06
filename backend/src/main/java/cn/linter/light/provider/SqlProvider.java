@@ -8,7 +8,7 @@ import cn.linter.light.entity.ParamMap;
 public class SqlProvider {
 
     public String provideSql(ParamMap param) {
-        return "<script>" + param.getSqlStatement() + "</script>";
+        return "<script>" + param.getStatement() + "</script>";
     }
 
 }

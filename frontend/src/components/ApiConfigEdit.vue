@@ -84,8 +84,8 @@
                     </el-option>
                 </el-select>
             </el-form-item>
-            <el-form-item label="SQL" prop="sqlStatement">
-                <el-input type="textarea" :autosize="{ minRows: 15, maxRows: 20}" v-model="apiConfig.sqlStatement"
+            <el-form-item label="SQL" prop="statement">
+                <el-input type="textarea" :autosize="{ minRows: 15, maxRows: 20}" v-model="apiConfig.statement"
                           :input-style="{'font-family': 'Consolas', 'font-size': '20px', color: '#409EFF'}"/>
             </el-form-item>
             <el-form-item>
@@ -134,7 +134,7 @@ export default {
                 dataSourceConfigId: [
                     {required: true, message: '请选择数据源', trigger: 'change'},
                 ],
-                sqlStatement: [
+                statement: [
                     {required: true, message: '请输入SQL语句', trigger: 'blur'},
                     {min: 10, max: 5000, message: '名称长度在 10 到 5000 个字符之间', trigger: 'blur'}
                 ],
